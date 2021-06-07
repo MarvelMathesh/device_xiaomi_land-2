@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_land.mk
+    $(LOCAL_DIR)/kangos_land.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_land-user \
-    yaap_land-userdebug \
-    yaap_land-eng
+    kangos_land-user \
+    kangos_land-userdebug \
+    kangos_land-eng

@@ -20,13 +20,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Yet Another AOSP Project stuff
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common kangos stuff
+$(call inherit-product, vendor/kangos/config/common.mk)
 
 TARGET_ARCH := arm64
 
 # Bootanimation
-scr_resolution := 720
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -35,7 +35,19 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := yaap_land
+PRODUCT_NAME := kangos_land
+
+# kangos
+KANGOS_BUILDTYPE := OFFICIAL
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_OPLAUNCHER := true
+
+# KangOS Props
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.maintainer=MarvelMathesh \
+  ro.kangos.cpu=msm8937
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
