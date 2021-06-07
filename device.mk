@@ -467,3 +467,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/land/land-vendor.mk)
+
+# Hardware
+PRODUCT_BOARD_PLATFORM := msm8937
+PRODUCT_USES_QCOM_HARDWARE := true
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
