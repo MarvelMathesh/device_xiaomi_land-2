@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_land.mk
+    $(LOCAL_DIR)/bliss_land.mk
 
 COMMON_LUNCH_CHOICES := \
-    kangos_land-user \
-    kangos_land-userdebug \
-    kangos_land-eng
+    bliss_land-user \
+    bliss_land-userdebug \
+    bliss_land-eng
