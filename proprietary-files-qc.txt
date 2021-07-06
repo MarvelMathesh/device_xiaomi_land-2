@@ -166,28 +166,26 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM - from olive - QKQ1.191014.001
-vendor/bin/qseecomd
-vendor/lib/libQSEEComAPI.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libssd.so
+# DRM - from LA.UM.8.6.r1-02600-89xx.0
+vendor/bin/qseecomd|c08dcb807310a69b0ed001d59fb688e9165f1007
+vendor/lib/libQSEEComAPI.so|199f80aa6b940204fe1119aa196a3f939a2d499e
+vendor/lib64/libGPreqcancel.so|a5f7f9679fdd081c9b9ea8f5c4a3714761ca997c
+vendor/lib64/libGPreqcancel_svc.so|82ee3c978563896569468fdc006455b3f28f35e9
+vendor/lib64/libQSEEComAPI.so|597926ec6d1fca95a76f65f52659920c441d84c2
+vendor/lib64/libSecureUILib.so|b48ed2e7cdb41d08c238a1fd171d9e7f8032516a
+vendor/lib64/libStDrvInt.so|c5413acfc1eb7218c0cff4085c8116e91252acca
+vendor/lib64/libdrmfs.so|bcae118bb9d2b07a2dae7fdcb30196293217e9ae
+vendor/lib64/libdrmtime.so|a8b04641f437e6235b3d708fe9ba486526f91ab2
+vendor/lib64/libqisl.so|491ac949ab488299c7a1ae4fe8257ec0a6f994b1
+vendor/lib64/librpmb.so|b74dce3afd27fee2caf7604032dad696211dd050
+vendor/lib64/libsecureui.so|dc3ccde15c3bdbc14da9fdc63dbf30973c5fe1b1
+vendor/lib64/libsecureui_svcsock.so|a7fdcd8001d4cdd9a30eb1ccc129324c398cc203
+vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
 
-# DRM - Widevine - olive - QKQ1.191014.001
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib64/libwvhidl.so
-vendor/lib64/mediadrm/libwvdrmengine.so
+# DRM - Widevine - LA.UM.8.6.r1-02600-89xx.0
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|b626d9bbf7043c66c8ef903c9d0e5183fc47388d
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
+vendor/lib64/libwvhidl.so|4af61fdcf1186700ea7ee23c607fb9ce5fd0f0e8
 
 # DSP - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/dspservice
@@ -204,9 +202,9 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper - from olive - QKQ1.191014.001
-vendor/lib/hw/gatekeeper.msm8937.so
-vendor/lib64/hw/gatekeeper.msm8937.so
+# Gatekeeper - from LA.UM.8.6.r1-02600-89xx.0
+vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
+vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # GPS - from olive - QKQ1.191014.001
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
@@ -331,9 +329,9 @@ vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 vendor/firmware/a540_gpmu.fw2
 
-# Keystore - from olive - QKQ1.191014.001
-vendor/lib/hw/keystore.msm8937.so
-vendor/lib64/hw/keystore.msm8937.so
+# Keystore - from LA.UM.8.6.r1-02600-89xx.0
+vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
+vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
 # Keymaster - from olive - QKQ1.191014.001
 vendor/lib/libkeymasterutils.so
@@ -670,11 +668,11 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# TUI - from olive - QKQ1.191014.001
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# TUI - from LA.UM.8.6.r1-02600-89xx.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|19932d88afdf0351d7bfb6dee19a171d85bc1fde
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7343cf8a20fb8e72e17b014cda7b5ae85841354a
 
 # Wi-Fi - from olive - QKQ1.191014.001
 vendor/bin/wcnss_service
