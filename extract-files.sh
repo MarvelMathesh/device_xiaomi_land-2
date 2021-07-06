@@ -119,5 +119,4 @@ extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" "${KANG}" --section "${SEC
 "${MY_DIR}/setup-makefiles.sh"
 
 # Protobuf (sdk29)
-patchelf --replace-needed libprotobuf-cpp-lite.so libprotobuf-cpp-lite-v29.so "${DEVICE_BLOB_ROOT}"/vendor/lib64/libwvhidl.so
 patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-full-v29.so "${DEVICE_BLOB_ROOT}"/vendor/lib64/libsettings.so
